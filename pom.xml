@@ -22,7 +22,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.github.emalock3</groupId>
 	<artifactId>emalock3-parent</artifactId>
-	<version>1</version>
+	<version>2</version>
 	<packaging>pom</packaging>
 	<name>emalock3-parent</name>
 	<url>https://github.com/emalock3/emalock3-parent</url>
@@ -36,8 +36,8 @@
 		<camel-version>2.12.3</camel-version>
 		<slf4j-version>1.7.6</slf4j-version>
 		<logback-version>1.1.1</logback-version>
-		<lombok-version>1.12.4</lombok-version>
-		<lombok-maven-version>1.12.4.0</lombok-maven-version>
+		<lombok-version>1.12.6</lombok-version>
+		<lombok-maven-version>1.12.6.0</lombok-maven-version>
 		<typesafe-config-version>1.2.0</typesafe-config-version>
 		<joda-time-version>2.3</joda-time-version>
 		<jsoup-version>1.7.3</jsoup-version>
