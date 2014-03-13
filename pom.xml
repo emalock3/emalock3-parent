@@ -22,7 +22,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.github.emalock3</groupId>
 	<artifactId>emalock3-parent</artifactId>
-	<version>2</version>
+	<version>4</version>
 	<packaging>pom</packaging>
 	<name>emalock3-parent</name>
 	<url>https://github.com/emalock3/emalock3-parent</url>
@@ -58,6 +58,12 @@
 				<groupId>org.apache.camel</groupId>
 				<artifactId>camel-spring</artifactId>
 				<version>${camel-version}</version>
+				<exclusions>
+					<exclusion>
+						<groupId>commons-logging</groupId>
+						<artifactId>commons-logging</artifactId>
+					</exclusion>
+				</exclusions>
 			</dependency>
 			<dependency>
 				<groupId>org.apache.camel</groupId>
@@ -264,6 +270,12 @@
 						</programs>
 					</configuration>
 				</plugin>
+				<plugin>
+                    <groupId>org.apache.karaf.tooling</groupId>
+                    <artifactId>karaf-maven-plugin</artifactId>
+                    <version>3.0.0</version>
+                    <extensions>true</extensions>
+                </plugin>
 			</plugins>
 		</pluginManagement>
 	</build>
