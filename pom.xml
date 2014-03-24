@@ -22,7 +22,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.github.emalock3</groupId>
 	<artifactId>emalock3-parent</artifactId>
-	<version>6</version>
+	<version>7</version>
 	<packaging>pom</packaging>
 	<name>emalock3-parent</name>
 	<url>https://github.com/emalock3/emalock3-parent</url>
@@ -33,7 +33,7 @@
 	
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<camel.version>2.12.3</camel.version>
+		<camel.version>2.13.0</camel.version>
 		<slf4j.version>1.7.6</slf4j.version>
 		<logback.version>1.1.1</logback.version>
 		<lombok.version>1.12.6</lombok.version>
@@ -320,11 +320,11 @@
 					</configuration>
 				</plugin>
 				<plugin>
-                    <groupId>org.apache.karaf.tooling</groupId>
-                    <artifactId>karaf-maven-plugin</artifactId>
-                    <version>3.0.0</version>
-                    <extensions>true</extensions>
-                </plugin>
+					<groupId>org.apache.karaf.tooling</groupId>
+					<artifactId>karaf-maven-plugin</artifactId>
+					<version>3.0.0</version>
+					<extensions>true</extensions>
+				</plugin>
 			</plugins>
 		</pluginManagement>
 	</build>
