@@ -22,7 +22,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.github.emalock3</groupId>
 	<artifactId>emalock3-parent</artifactId>
-	<version>10</version>
+	<version>11</version>
 	<packaging>pom</packaging>
 	<name>emalock3-parent</name>
 	<url>https://github.com/emalock3/emalock3-parent</url>
@@ -343,7 +343,6 @@
 					<version>${querydsl.version}</version>
 					<executions>
 						<execution>
-							<phase>generate-sources</phase>
 							<goals>
 								<goal>export</goal>
 							</goals>
