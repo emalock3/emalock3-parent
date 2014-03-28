@@ -22,7 +22,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.github.emalock3</groupId>
 	<artifactId>emalock3-parent</artifactId>
-	<version>13</version>
+	<version>14</version>
 	<packaging>pom</packaging>
 	<name>emalock3-parent</name>
 	<url>https://github.com/emalock3/emalock3-parent</url>
@@ -47,6 +47,7 @@
 		<querydsl.version>3.3.2</querydsl.version>
 		<hamcrest.version>1.3</hamcrest.version>
 		<junit.version>4.11</junit.version>
+		<message.digest.extensions.version>1.0.0</message.digest.extensions.version>
 	</properties>
 
 	<dependencyManagement>
@@ -207,6 +208,11 @@
 				<artifactId>querydsl-sql-codegen</artifactId>
 				<version>${querydsl.version}</version>
 				<scope>provided</scope>
+			</dependency>
+			<dependency>
+				<groupId>com.github.emalock3.digest</groupId>
+				<artifactId>message-digest-extensions</artifactId>
+				<version>${message.digest.extensions.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>org.hamcrest</groupId>
