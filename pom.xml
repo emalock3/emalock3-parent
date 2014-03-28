@@ -22,7 +22,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.github.emalock3</groupId>
 	<artifactId>emalock3-parent</artifactId>
-	<version>12</version>
+	<version>13</version>
 	<packaging>pom</packaging>
 	<name>emalock3-parent</name>
 	<url>https://github.com/emalock3/emalock3-parent</url>
@@ -290,52 +290,6 @@
 							</configuration>
 						</execution>
 					</executions>
-				</plugin>
-				<plugin>
-					<groupId>org.projectlombok</groupId>
-					<artifactId>lombok-maven-plugin</artifactId>
-					<version>${lombok.maven.version}</version>
-					<executions>
-						<execution>
-							<id>delombok</id>
-							<phase>generate-sources</phase>
-							<goals>
-								<goal>delombok</goal>
-							</goals>
-							<configuration>
-								<sourceDirectory>src/main/java</sourceDirectory>
-							</configuration>
-						</execution>
-					</executions>
-					<configuration>
-						<encoding>UTF-8</encoding>
-						<addOutputDirectory>false</addOutputDirectory>
-					</configuration>
-				</plugin>
-				<plugin>
-					<groupId>org.codehaus.mojo</groupId>
-					<artifactId>appassembler-maven-plugin</artifactId>
-					<version>1.7</version>
-					<executions>
-						<execution>
-							<phase>package</phase>
-							<goals>
-								<goal>assemble</goal>
-							</goals>
-						</execution>
-					</executions>
-					<configuration>
-						<repositoryLayout>flat</repositoryLayout>
-						<repositoryName>lib</repositoryName>
-						<programs>
-						</programs>
-					</configuration>
-				</plugin>
-				<plugin>
-					<groupId>org.apache.karaf.tooling</groupId>
-					<artifactId>karaf-maven-plugin</artifactId>
-					<version>3.0.0</version>
-					<extensions>true</extensions>
 				</plugin>
 				<plugin>
 					<groupId>com.mysema.querydsl</groupId>
